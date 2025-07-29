@@ -8,8 +8,8 @@ def index():
 
 @app.route("/checkout")
 def checkout():
-    # get all 'price' parameters submitted
-    prices = request.args.getlist("price")
+    item_id = request.args.get("item_id")
+    prices = request.args.getlist("price") # get all 'price' parameters submitted
     price = None
     flag = False
     success = False

@@ -13,6 +13,6 @@ GooseCTF{parametr_p0lluti0n_dtctd}
 
 The challenge involves a HTTP parameter pollution vulnerability. This is a web vulnerability where different back-end technologies handle multiple parameters with the same name differently (see more here: [https://en.wikipedia.org/wiki/HTTP_parameter_pollution](https://en.wikipedia.org/wiki/HTTP_parameter_pollution)). In this case, the application takes the last price parameter submitted and checks if multiple price parameters were sent.
 
-To solve, send a request like: `/checkout?price=199&price=1`. The first price parameter will be used for the actual price check, and the second price parameter will trigger the multiple parameters detection.
+To solve, send a request like: `/checkout?item_id=nokia3310&price=199&price=1`. The first price parameter will be used for the actual price check, and the second price parameter will trigger the multiple parameters detection.
 
 ## Previous Challenge: N/A
